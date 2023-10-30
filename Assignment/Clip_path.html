@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../Task/Burgerweb/Image/Instagram.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .container{
+            color:white;
+            background: url(../Assignment/image/balloon_Background.png) no-repeat center center/cover;
+            -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+            clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+            z-index: 2;
+            position: relative;
+        }
+        .wrapper{
+            padding:0 100px 100px;
+            background-color: rgba(66, 64, 64, 0.813);
+        }
+        .nav{
+            padding:30px 60px 100px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 25px;
+        }
+        .logo{
+            font-weight: 600;
+            font-size: 30px;
+        }
+        ul{
+            display: flex;
+            gap: 30px;
+            list-style-type: none;
+        }
+        .head{
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+        }
+        .head p{
+            margin: 0 100px;
+            padding: 0 100px;
+        }
+        .div{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        .get{
+            background-color: #ec1818;
+            padding: 5px 30px;
+        }
+        .learn{
+            padding: 5px 30px;
+            background-color: transparent;
+            border: 1px solid white;
+        }
+        .anchor{
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #d7d3d3;
+            z-index: 4;
+            padding: 16px;
+            top: 76%;
+            left: 48%;
+        }
+        .outside{
+            display: flex;
+            justify-content: space-around;
+            margin: 50px;
+        }
+        div[class*="box"]{
+            height: 60px;
+            width: 60px;
+            margin: 0 auto;
+            border: 1px solid gray;
+            padding-top: 20px;
+        }
+        .box1{
+            rotate: 45deg;
+        }
+        .box1 i{
+            rotate: 135deg;
+        }
+        .design{
+            text-align: center;
+            padding: 20px 50px;
+        }
+        .design h2,p{
+            padding-top: 10px;
+        }
+        .design h2{
+            text-decoration:brown underline;
+
+        }
+        li:hover{
+            color: #cb2a2a;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="anchor"><i class="fa-solid fa-anchor" style="color: #ec1818;"></i></div>
+        <div class="container">
+            <div class="wrapper">
+                <nav>
+                    <div class="nav">
+                        <div class="logo">LOGO</div>
+                        <div class="home">
+                           <ul>
+                                <li>Home</li>
+                                <li>About us</li>
+                                <li>Portfolio</li>
+                                <li>Pricing</li>
+                                <li>Team</li>
+                                <li>Blog</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>    
+                <div class="head">
+                    <h3>Our Clients are Our First Priority</h3>
+                    <h1>WELCOME TO SKY</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis fugit commodi 
+                    veritatis reprehenderit aperiam dolore quisquam sapiente minima? Commodi, ad?</p>
+                    <div class="div">
+                    <div class="get">Get Started Now</div>
+                    <div class="learn">Learn More</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="outside">
+        <div class="design">
+            <div class="box1"><i class="fa-solid fa-infinity" style="color: #ff0000;"></i></div>
+            <h2>Sleek Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, provident!</p>
+        </div>
+        <div class="design">
+            <div class="box2"><i class="fa-regular fa-heart" style="color: #ff0000;"></i></div>
+            <h2>Clean mode</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, provident!</p>
+        </div>
+        <div class="design">
+            <div class="box3"><i class="fa-regular fa-lightbulb" style="color: #ff0000;"></i></div>
+            <h2>Creative idea</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, provident!</p>
+        </div>
+        <div class="design">
+            <div class="box4"><i class="fa-regular fa-message" style="color: #ff0000;"></i></div>
+            <h2>Free Support</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, provident!</p>
+        </div>
+        </div>
+    </header>
+</body>
+</html>
