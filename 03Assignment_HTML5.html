@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Assignment</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0 ;
+            box-sizing: border-box;
+        }
+        h1{
+           color: palevioletred;
+           border: 4px solid cadetblue;
+           box-shadow: 4px 4px 4px cadetblue;
+           text-shadow: -3px -3px 3px purple;
+           font-size: 50px;
+           /* text-decoration: underline; */
+           display: inline-block;
+           padding: 10px;
+           margin: 20px 410px;
+        }
+        #question{
+            color: brown;
+            border: 2px solid brown;
+            font-size: 25px;
+            display: inline-block;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+        p,ul{
+            font-size: 25px;
+        }
+        ul{
+            margin-left: 20px;
+            list-style-type: none;
+        }
+        body{
+            margin-left: 10px;
+        }
+        #answer4{
+            width: 65%;
+            display: none;
+            background: rgb(191, 250, 250);
+            border: 5px ridge rgb(98, 98, 251);
+            font-size: 22px;
+        }
+        td,th{
+            padding: 8px;
+        }
+        #answer1,#answer2,#answer3{
+            background: rgb(191, 250, 250);
+            border: 5px ridge rgb(98, 98, 251);
+            padding-left: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML5 Assignment</h1><br><br>
+    <!-- question 1 starts here -->
+    <h3 id="question" onclick="showanswer(this,'answer1')">1. What are the new tags added in HTML5?</h3><br><br>
+    <div id="answer1">
+    <p>&bull; HTML5 supports both audio and video tags.</p>
+    <p>&bull; HTML5 supports new types of form controls, such as date and time, email, number, category, title, Url, search, etc.</p>
+    <p>&bull; Many elements have been introduced in HTML5. Some of the most important are :</p>
+        <ul>
+            <li>&lt;header&gt;</li>
+            <li>&lt;time&gt;</li>
+            <li>&lt;audio&gt;</li>
+            <li>&lt;description&gt;</li>
+            <li>&lt;embed&gt;</li>
+            <li>&lt;fig&gt;</li>
+            <li>&lt;shape&gt;</li>
+            <li>&lt;footer&gt;</li>
+            <li>&lt;article&gt;</li>
+            <li>&lt;canvas&gt;</li>
+            <li>&lt;navy&gt;</li>
+            <li>&lt;output&gt;</li>
+            <li>&lt;section&gt;</li>
+            <li>&lt;source&gt;</li>
+            <li>&lt;track&gt;</li>
+            <li>&lt;video&gt;</li>
+        </ul>
+    </div>
+    <br>
+
+    <!-- question 2 starts here -->
+    <h3 id="question" onclick="showanswer(this,'answer2')">2. How to embed audio and video in a webpage?</h3><br><br>
+    <div id="answer2">
+    <h3>&bull; &lt;audio&gt; Tag:</h3><br>
+    <p>The HTML &lt;audio&gt; element is used to embed an audio file on a web page.</p>
+    <p><b>src :</b> src specifies the URL(Address) of the audio file.</p>
+    <p><b>controls :</b> The controls attribute adds audio controls, like play, pause, and volume.</p>
+    <br>
+    <h3>&bull; &lt;video&gt; Tag:</h3><br>
+    <p>The HTML &lt;video&gt; element is used to embed a video on a web page.</p>
+    <p><b>src :</b> src specifies the URL(Address) of the video file.</p>
+    <p><b>controls :</b> The controls attribute adds video controls, like play, pause, and volume.</p>
+    <p><b>muted & autoplay :</b> Add muted after autoplay to let your video start playing automatically (but muted).</p>
+    <p>We can also embed a video using <b>&lt;iframe&gt;</b> tag and <b>&lt;embed&gt;</b> tag in HTML.</p>
+    </div>
+    <br>
+
+    <!-- question 3 starts here -->
+    <h3 id="question" onclick="showanswer(this,'answer3')">3. Semantic element in HTML5?</h3><br><br>
+    <div id="answer3">
+    <p>&bull; A semantic element clearly describes its meaning to both the browser and the developer. <br>
+        Examples of <b>non-semantic</b> elements: <b>&lt;div&gt;</b> and <b>&lt;span&gt;</b> - Tells nothing about its content. <br>
+        Examples of <b>semantic</b> elements: <b>&lt;form&gt;</b>, <b>&lt;table&gt;</b>, and <b>&lt;article&gt;</b> - Clearly defines its content.</p>
+    <p>In HTML there are some semantic elements that can be used to define different parts of a web page:</p>  
+    <ul>
+        <li>&lt;header&gt;</li>
+        <li>&lt;nav&gt;</li>
+        <li>&lt;aside&gt;</li>
+        <li>&lt;details&gt;</li>
+        <li>&lt;figcaption&gt;</li>
+        <li>&lt;figure&gt;</li>
+        <li>&lt;article&gt;</li>
+        <li>&lt;main&gt;</li>
+        <li>&lt;mark&gt;</li>
+        <li>&lt;section&gt;</li>
+        <li>&lt;summary&gt;</li>
+        <li>&lt;time&gt;</li>
+        <li>&lt;footer&gt;</li>
+    </ul>
+    </div>
+    <br>
+
+    <!-- question 4 starts here -->
+    <h3 id="question" onclick="showanswer(this,'answer4')">4. Canvas and SVG tags.</h3><br><br>
+    <div id="answer4">
+    <table border="1px solid black;">
+        <tr>
+            <th>SVG</th>
+            <th>Canvas</th>
+        </tr>
+        <tr>
+            <td>Vector based (composed of shapes)</td>
+            <td>Raster based (composed of pixel)</td>
+        </tr>
+        <tr>
+            <td>SVG has better scalability. So it can be printed with high quality at any resolution.</td>
+            <td>Canvas has poor scalability. Hence it is not suitable for printing on higher resolution.</td>
+        </tr>
+        <tr>
+            <td>SVG gives better performance with smaller number of objects or larger surface.</td>
+            <td>Canvas gives better performance with smaller surface or larger number of objects.</td>
+        </tr>
+        <tr>
+            <td>SVG can be modified through script and CSS.</td>
+            <td>Canvas can be modified through script only.</td>
+        </tr>
+        <tr>
+            <td>Multiple graphical elements, which become the part of the page's DOM tree.</td>
+            <td>Single element similar to &lt;img&gt; in behavior. Canvas diagram can be saved to PNG or JPG format.</td>
+        </tr>
+    </table>
+    </div>
+    <br><br><br>
+
+    <script>
+        function showanswer(a , b) {
+            let play = document.getElementById(b).style.display;
+        if (play == 'none') {
+            document.getElementById(b).style.display = 'block';
+        } else {
+            document.getElementById(b).style.display = 'none'
+        }    
+        }
+    </script>
+</body>
+</html>
+
