@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Assignment</title>
+    <link rel="stylesheet" href="Assignment_js.css">
+</head>
+<body>
+    <h1>*JAVASCRIPT BASIC & DOM*</h1>
+
+    <!-- Question1 -->
+    <h3 id="question" onclick="showanswer(this , 'answer_1')">1. What is JavaScript?</h3>
+    <p id="answer_1">JavaScript is a versatile programming language primarily used for web development.
+    It allows developers to add interactivity, dynamic content, and behavior to websites.
+    Originally created to make web pages interactive, JavaScript has evolved into a 
+    powerful language used for both client-side and server-side development. </p>
+    <br>
+    <!-- Question2 -->
+    <h3 id="question" onclick="showanswer(this , 'answer_2')">2. What is the use of <b>isNaN</b> function?</h3>
+    <p id="answer_2">In JavaScript NaN is short for "Not-a-Number". <br>
+        The isNaN() method returns true if a value is NaN. <br>
+        The isNaN() method converts the value to a number before testing it.</p>
+    <br>
+    <!-- Question3 -->
+    <h3 id="question" onclick="showanswer(this , 'answer_3')">3. What is negative Infinity?</h3>
+    <p id="answer_3">NEGATIVE_INFINITY is a property of the JavaScript Number object.
+        It's a numeric value in JavaScript that signifies a value that 
+        is lower than any other number, including negative numbers. <br>
+        You can only use it as <b>Number.NEGATIVE_INFINITY</b>.</p>
+    <br>
+    <!-- Question4 -->
+    <h3 id="question" onclick="showanswer(this , 'answer_4')">4. Which company developed JavaScript?</h3>
+    <p id="answer_4">JavaScript was developed by Netscape Communications Corporation. 
+    Brendan Eich, a programmer at Netscape, created JavaScript in 1995.</p>
+    <br>
+    <!-- Question5-->
+    <h3 id="question" onclick="showanswer(this , 'answer_5')">5. What are undeclared and undefined variables?</h3>
+    <p id="answer_5">Undeclared variables are those that have not been declared or defined in the current scope,
+        while undefined variables are those that have been declared but not given a value.</p>
+    <br>
+    <!-- Question6 -->
+    <h3 id="question"  onclick="showanswer(this , 'pre')">6. Write the code for adding new elements dynamically?</h3>
+<pre id="pre" style="font-size: 19px;">
+&lt;script&gt;
+    function myFunction() {    
+        let node = document.createElement("p");
+        let textnode = document.createTextNode("This is a Paragraph Created Dynamically");
+        node.appendChild(textnode);
+        document.getElementById("heading").appendChild(node);
+    }
+&lt;/script&gt;
+    </pre>
+
+    <br>
+    <!-- Question7 -->
+    <h3 id="question" onclick="showanswer(this , 'answer_7')">7. What is the difference between ViewState and SessionState?</h3>
+    <table id="answer_7" border="5px inset darkgray">
+        <tr>
+            <th>ViewState</th>
+            <th>SessionState</th>
+        </tr>
+        <tr>
+            <td>A ViewState is a state of a page within a browser wherein the values of controls persist when post back operation is done.</td>
+            <td> SessionState is the data of a user session and is maintained on the server side.</td>
+        </tr>
+        <tr>
+            <td>If the user requests another page, the data of previous page is no longer available.</td>
+            <td>The availability of the user data is up to the completion of a session or closure of the browser.</td>
+        </tr>
+    </table>
+    <br>
+    <!-- Question8 -->
+    <h3 id="question" onclick="showanswer(this , 'answer_8')">8. What is === operator?</h3>
+    <p id="answer_8">The <b>===</b> operator in JavaScript is the <b>strict equality operator</b>. It compares two values, 
+    checking not only if they are equal in value but also if they are of the same data type returning a Boolean result.</p>
+    <br>
+    <!-- Question11 -->
+    <h3 id="question" onclick="showanswer(this , 'answer_9')">9. What are all the looping structures in JavaScript?</h3>
+    <div id="answer_9">
+    <p>Loops offer a quick and easy way to do something repeatedly. <br>
+    JavaScript supports several looping structures:</p>
+    <ol>
+        <li>for Loop</li>
+        <li>while Loop</li>
+        <li>do...while Loop</li>
+        <li>for...in Loop</li>
+        <li>for...of Loop</li>
+    </ol>
+    </div>
+    <br>
+    <!-- Question12 -->
+    <h3 id="question" onclick="showanswer(this , 'answer_10')">10. How can you convert the string of any base to an integer in JavaScript?</h3>
+    <p id="answer_10">In JavaScript, you can convert a string representation of a number in different bases
+        (binary, octal, hexadecimal) to an integer using the parseInt() function. 
+        This function takes the string to parse as the first argument and the base as the second argument.</p>
+    <br>
+    <!-- Question13 -->
+    <h3 id="question" onclick="showanswer(this , 'answer_11')">11. What is the function of the delete operator?</h3>
+    <div id="answer_11">
+    <p>The delete operator in JavaScript is used to remove a property from an object. It allows you to delete 
+        both an object's own properties and properties inherited from its prototype chain.</p>
+    <p>Syntax: delete object[property]</p>
+    </div>
+    <br>
+    <!-- Question14 -->
+    <h3 id="question" onclick="showanswer(this , 'answer_12')">12. What are all the types of Pop up boxes available in JavaScript?</h3>
+    <div id="answer_12">
+    <p>In Javascript, popup boxes are used to display the message or notification to the user.
+        <br>There are three types of pop-up boxes in JavaScript:</p>
+    <h4>1. Alert Box:</h4>
+    <p>It is used when a warning message is needed to be produced.
+        When the alert box is displayed to the user, the user needs to press ok and proceed.</p>
+    <h4>2. Confirm Box</h4>
+    <p>It is a type of pop-up box that is used to get authorization or permission from the user.
+        The user has to press the ok or cancel button to proceed.</p>
+    <h4>3.Prompt Box</h4>
+    <p>It displays a message along with an input field where the user can enter some text. 
+        It's used to get input from the user.</p>
+    </div>
+    <br>
+    <!-- Question15 -->
+    <h3 id="question" onclick="showanswer(this , 'answer_13')">13. What is the use of Void (0)?</h3>
+    <p id="answer_13">The void operator evaluates the given expression and then returns undefined.
+        In JavaScript, void(0) is a way to create an expression that evaluates to undefined. 
+        The void operator in JavaScript takes an operand and evaluates it, then returns undefined.</p>
+    <br>
+    <!-- Question16 -->
+    <h3 id="question" onclick="showanswer(this , 'answer_14')">14. How can a page be forced to load another page in JavaScript?</h3>
+    <div id="answer_14">
+    <p>In JavaScript, we can use window. location object to force a page to load another page.
+        We can use the location object to set the URL of a new page.</p>
+    <p>window.location.href = 'https://www.example.com';</p>
+    </div>
+    <br>
+    <!-- Question18 -->
+    <h3 id="question">15. Create password field with show hide functionalities </h3><br><br>
+    <div id="answer_15">
+    <label for="password">Enter Password :</label>
+    <input type="password" name="password" id="password"><br>
+    <input type="checkbox" name="password" id="click" onclick="showpassword()">
+    <span>Show Password</span>
+    </div>
+
+    <script>
+        function showpassword(){
+            let password = document.getElementById('password');
+            if (password.type == 'password') {
+                password.type = 'text'
+            } else {
+                password.type = 'password';
+            }
+        }    
+
+        function showanswer(a , id) {
+            let display = document.getElementById(id).style.display;
+        if (display == 'none') {
+            document.getElementById(id).style.display = 'block';
+        } else {    
+            document.getElementById(id).style.display = 'none'
+        }    
+        }
+    </script>
+   
+    <br><br><br><br>
+</body>
+</html>

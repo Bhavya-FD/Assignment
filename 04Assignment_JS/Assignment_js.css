@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    color: rgb(80, 133, 135);
+    font-size: 40px;
+    padding: 5px;
+    margin: 20px;
+    text-decoration: underline overline dashed black ;
+    text-shadow: 3px 3px 3px rgb(55, 92, 93);
+}
+#question{
+    color: rgb(163, 81, 22);
+    font-size: 32px;
+    background: rgba(186, 185, 185, 0.84);
+    text-align: center;
+    margin: 0 200px;
+    border: 4px ridge brown;
+}
+[id^='answer_'],#pre {
+    background: rgba(163, 81, 22, 0.762);
+    color: rgb(236, 232, 232);
+    border: 6px ridge rgb(199, 198, 198);
+    font-size: 27px;
+    margin: 10px 200px;
+    display: none;
+}
+pre{
+    font-size: 17px;
+}
+h4,th{
+    color: blue ;
+}
+table{
+    width: 70%;
+    text-align: center;
+}
+p,table{
+    font-size: 20px;
+}
+ol{
+    margin-left: 38px;
+}
+p{
+    padding-left: 10px;
+}
+label{
+    margin-left: 60px;
+}
+#click{
+    margin-left: 150px;
+}
+#answer_15{
+    display: block;
+    margin:0 420px;
+    
+}
